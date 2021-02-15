@@ -1,6 +1,6 @@
 ﻿Connect-AzAccount
-$tempalteFile = "C:\Users\eirik\OneDrive - NTNU\Bachelor21\Main\hyper-V\Azure\VM\template.json"
-$parameterFile = "C:\Users\eirik\OneDrive - NTNU\Bachelor21\Main\hyper-V\Azure\VM\parameters.json"
+$tempalteFile = "C:\Users\eirik\OneDrive - NTNU\Bachelor21\Main\hyper-V\on-prem\hyper-V-Setup\template.json"
+$parameterFile = "C:\Users\eirik\OneDrive - NTNU\Bachelor21\Main\hyper-V\on-prem\hyper-V-Setup\parameters.json"
 $adminPassword = Read-Host -Prompt "Enter admin password" -AsSecureString
 
 New-AzResourceGroupDeployment `
