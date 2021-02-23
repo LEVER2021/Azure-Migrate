@@ -1,0 +1,2 @@
+$LocalUsers = Get-ADUser -Filter "UserPrincipalName -like '*LEVER.no'" -Properties userPrincipalName -ResultSetSize $null
+$LocalUsers | foreach {$newUpn = $_.UserPrincipalName.Replace("@LEVER.no","@lever21.online"); $_ | Set-ADUser -UserPrincipalName $newUpn}
