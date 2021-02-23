@@ -1,0 +1,51 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "apiVersion": {
+            "value": "2020-01-01"
+        },
+        "sku": {
+            "value": "Enterprise"
+        },
+        "domainConfigurationType": {
+            "value": "FullySynced"
+        },
+        "domainName": {
+            "value": "lever21.online"
+        },
+        "filteredSync": {
+            "value": "Enabled"
+        },
+        "location": {
+            "value": "northeurope"
+        },
+        "notificationSettings": {
+            "value": {
+                "notifyGlobalAdmins": "Enabled",
+                "notifyDcAdmins": "Enabled",
+                "additionalRecipients": []
+            }
+        },
+        "subnetName": {
+            "value": "aadds-subnet-01"
+        },
+        "tags": {
+            "value": {}
+        },
+        "vnetName": {
+            "value": "aadds-vnet-lever"
+        },
+        "vnetAddressPrefixes": {
+            "value": [
+                "10.1.2.0/24"
+            ]
+        },
+        "subnetAddressPrefix": {
+            "value": "10.1.2.0/24"
+        },
+        "nsgName": {
+            "value": "aadds-nsg"
+        }
+    }
+}
