@@ -1,0 +1,102 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "rdshImageSource": {
+            "value": "Gallery"
+        },
+        "vmImageVhdUri": {
+            "value": ""
+        },
+        "rdshGalleryImageSKU": {
+            "value": "Windows-10-Enterprise-multi-session-with-Office-365-ProPlus-2004"
+        },
+        "rdshCustomImageSourceName": {
+            "value": ""
+        },
+        "rdshCustomImageSourceResourceGroup": {
+            "value": ""
+        },
+        "rdshNamePrefix": {
+            "value": "wvd-tenant"
+        },
+        "rdshNumberOfInstances": {
+            "value": 1
+        },
+        "rdshVMDiskType": {
+            "value": "Standard_LRS"
+        },
+        "rdshVmSize": {
+            "value": "Standard_D2s_v3"
+        },
+        "enableAcceleratedNetworking": {
+            "value": false
+        },
+        "rdshUseManagedDisks": {
+            "value": true
+        },
+        "domainToJoin": {
+            "value": "lever21.online"
+        },
+        "existingDomainUPN": {
+            "value": "domenekontroller@lever21.online"
+        },
+        "existingDomainPassword": {
+            "value": null
+        },
+        "ouPath": {
+            "value": ""
+        },
+        "existingVnetName": {
+            "value": "Domenekontroller-vnet"
+        },
+        "newOrExistingVnet": {
+            "value": "existing"
+        },
+        "existingSubnetName": {
+            "value": "default"
+        },
+        "virtualNetworkResourceGroupName": {
+            "value": "Domenekontroller"
+        },
+        "rdBrokerURL": {
+            "value": "https://rdbroker.wvd.microsoft.com"
+        },
+        "existingTenantGroupName": {
+            "value": "Default Tenant Group"
+        },
+        "existingTenantName": {
+            "value": "LeverWVDtenant"
+        },
+        "hostPoolName": {
+            "value": "wvd-host-pool01"
+        },
+        "serviceMetadataLocation": {
+            "value": "United-States"
+        },
+        "enablePersistentDesktop": {
+            "value": false
+        },
+        "defaultDesktopUsers": {
+            "value": "wvduser1@lever21.online,wvduser2@lever21.online"
+        },
+        "tenantAdminUpnOrApplicationId": {
+            "value": "lever_domeneadministrator@lever21.online"
+        },
+        "tenantAdminPassword": {
+            "value": null
+        },
+        "isServicePrincipal": {
+            "value": false
+        },
+        "aadTenantId": {
+            "value": ""
+        },
+        "location": {
+            "value": "northeurope"
+        },
+        "createAvailabilitySet": {
+            "value": false
+        }
+    }
+}
